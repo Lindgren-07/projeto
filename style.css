@@ -3,17 +3,24 @@ nav{
    background-color: rgb(45, 134, 45);
    color:#e5f7a6fd;
    height: 90px;
+  
+   
    display: flex;
    align-items: center;
+   width: 100%;
+   justify-content: center;
 }
 ul{
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-right: 100px;
+    
+   
     
 }
 img{
-    height: 5%;
+    height: 35px;
     width: 5%;
     margin-bottom: 12px;
     margin-left: 125px;
@@ -22,10 +29,11 @@ div:hover{
     background-color: rgb(46, 31, 3);
 }
 div{
-    height: 45px;
+    height: 35px;
     text-align: center;
     display: flex;
     align-items: center;
+    
     
 }
 h3{
@@ -35,4 +43,20 @@ h3{
     background-color:  rgb(46, 31, 3);
     display: flex;
     justify-content: center;
+}
+#plantaNav{
+    height: 55px;
+    width: 50px;
+    margin-left: 30px;
+    
+}
+#bt1{
+    background-color: rgb(46, 31, 3);
+    color: white;
+    
+}
+#txt{
+    margin-right: 15px;
+    
+
 }
