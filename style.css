@@ -13,7 +13,7 @@ nav{
    width: 100%;
    justify-content: center;
 }
-ul{
+#ul1{
     list-style: none;
     display: flex;
     justify-content: center;
@@ -31,6 +31,8 @@ img{
 .menu:hover{
     background-color: rgb(46, 31, 3);
     transition: 1s;
+    position: relative;
+    
 }
 .menu{
     height: 35px;
@@ -38,6 +40,7 @@ img{
     display: flex;
     align-items: center;
     transition: 1s;
+    position: relative;
     
     
 }
@@ -126,3 +129,15 @@ hr{
     border: 2px black solid;
     margin-top: 60px;
 }
+.subli{
+    display: none;
+    color: white;
+    background-color: black;
+    position: absolute;
+    padding: 10px;
+}
+
+#ul1 li:hover .subli {
+    display: block;
+   margin-top: 7px;
+  }
