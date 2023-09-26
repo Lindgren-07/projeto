@@ -78,7 +78,7 @@ h3{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     transform: translateX();
-    animation: movimento 14s linear infinite;
+    animation: movimento 18s linear infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +102,7 @@ h3{
 
 #sec{
     background-color: rgb(45, 134, 45);
-   height: 700px;
+    height: 1500px;
 }
 hr{
     height: 7px;
@@ -140,4 +140,76 @@ hr{
 #ul1 li:hover .subli {
     display: block;
    margin-top: 7px;
+  }
+
+  .carrinho-img{
+    margin-right: 7px;
+  }
+
+  /*ESTILO PARA O CONTAINER*/
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 40px;
+  }
+
+  .text-div{/*ESTILO DO TEXTO ACIMA DO PRODUTO*/
+    margin-left: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-top: 80px;
+  }
+
+  .img-div{/*ESTILO DA DIV QUE A IMAGEM ESTA*/
+    background-color: aliceblue;
+    height: 250px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(37, 3, 3);
+  }
+
+  .section-img{/*ESTILO PARA A IMAGEM EM SI*/
+    height: 400px;
+    width:70%;
+    margin: auto;
+  }
+
+  .precoRS{/*ESTILO PARA O PREÇO*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-left: 20px;
+    font-size: 23px;
+    padding: auto;
+
+  }
+
+  .preco-botao{
+    margin-top: 8px;
+  }
+
+  .bot-class{/*ESTILO DO BOTAO QUE ADICIONA O CARRINHO*/
+    background-color:rgb(46, 31, 3);
+    border: 1px solid aliceblue;
+    box-shadow: 2px 2px 2px black;
+    height: 30px;
+    width: 41.5%;
+    cursor: pointer;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:15px;
+  }
+
+  #carrinho{
+    position: fixed;
+    top: 10px; /* Ajuste a posição conforme necessário */
+    right: 10px; /* Ajuste a posição conforme necessário */
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 10px;
+    display: none; /* Inicialmente, oculte o carrinho de informações */
+    z-index: 1000; /* Certifique-se de que esteja acima de outros elementos */
   }
