@@ -6,15 +6,15 @@
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
-        <div id = "linha"><h3>Monte aqui o seu jardim ideal</h3></div>
+        <div id = "linha"><h1>Monte aqui o seu jardim ideal</h1></div>
         <nav>
             <!--<h2>Seu Jardim</h2>-->
             <img src = "40486_cropped.png" alt = "planta" id = "plantaNav">
             <ul id = "ul1">
                 <img src="Icone-Planta-Crescendo-Folhas.jpg" alt = "planta"><div class = "menu"><a><li>Agências</li></a></div>
-                <img src="Icone-Planta-Crescendo-Folhas.jpg" alt = "planta"><div class = "menu"><a><li>Localização</li></a></div>
+                <img src="Icone-Planta-Crescendo-Folhas.jpg" alt = "planta"><div class = "menu"><a href="informacao.html" target="_blank"><li>Informações</li></a></div>
                 <img src="Icone-Planta-Crescendo-Folhas.jpg" alt = "planta"><div class = "menu"><a><li>Telefones</li></a></div>
-                <img src="Icone-Planta-Crescendo-Folhas.jpg" alt = "planta"><div class = "menu"><a><li>Parceiros</li></a></div>
+                
             </ul>
             <img src="img/carrinho.png" alt="carrinho" id="carrinho-img">
             <input type = "button" value = "pesquisar" id = "bt1">
@@ -35,6 +35,12 @@
                 <h2>Carrinho de Compras</h2>
                 <ul id="carrinho-lista"></ul>
                 <p>Total: R$ <span id="total">0.00</span></p>
+                <div>
+                    <img src="img/plantCar.png" alt = "planta" id = "plantaCar">
+                </div>
+                <div>
+                    <button id="limparCarrinho">Limpar carrinho</button>
+                </div>
               </div>
 
             
@@ -185,11 +191,33 @@
             </section>
 
 
-
-
-              
-           
         </section>
+
+        <footer class = "footerPag">
+
+            <span>
+                <p class = "footer-titulo">Bela Botânica</p>
+            </span>
+
+            <div>
+                <img src="img/fases.png" alt="seujardim" id="img-footer"> 
+            </div>
+
+            
+                <ul class = "lista-footer">
+                    <li><img src="img/fbb.png"  class="icon-footer"></li>
+                    <li><img src="img/insta.png" class="icon-footer"></li>
+                    <li><img src="img/wpp.png" class="icon-footer"></li>
+                </ul>
+            
+
+
+
+        </footer>
+
+        
+
+
        <script src = "script.js"></script>
     </body>
 </html>

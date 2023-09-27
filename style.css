@@ -1,5 +1,16 @@
 body{
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: fontInicial;
+    src: url(fontes/MysticeTimes_PERSONAL_USE_ONLY.otf);
+}
+
+@font-face{
+    font-family: fontFooter;
+    src: url(fontes/PicturamaAlternate_PERSONAL_USE_ONLY.otf);
 }
 
 
@@ -43,9 +54,11 @@ img{
     position: relative;
     
     
+    
 }
-h3{
+h1{
     color:aliceblue;
+    font-family: fontInicial;
 }
 #linha{
     background-color:  rgb(46, 31, 3);
@@ -142,8 +155,9 @@ hr{
    margin-top: 7px;
   }
 
-  .carrinho-img{
+  #carrinho-img{
     margin-right: 7px;
+    height: 40px;
   }
 
   /*ESTILO PARA O CONTAINER*/
@@ -203,13 +217,64 @@ hr{
     font-size:15px;
   }
 
-  #carrinho{
+  #carrinho{/*POSIÇÃO DO CARRINHO*/
     position: fixed;
-    top: 10px; /* Ajuste a posição conforme necessário */
-    right: 10px; /* Ajuste a posição conforme necessário */
+    top:5px;
+    right:5px;
     background-color: #fff;
     border: 1px solid #000;
     padding: 10px;
-    display: none; /* Inicialmente, oculte o carrinho de informações */
-    z-index: 1000; /* Certifique-se de que esteja acima de outros elementos */
+    display: none; 
   }
+
+  #plantaCar{
+    height: 120px;
+    width: 50%;
+  }
+
+  #limparCarrinho{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: rgb(51, 21, 21);
+    color:aliceblue;
+    cursor: pointer;
+  }
+
+  .footerPag{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(46, 31, 3);
+  }
+
+  #img-footer{
+    height: 300px;
+    width: 60%;
+    margin-left: 40%;
+  }
+
+ .lista-footer{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+.icon-footer{
+    height: 50px;
+    width: 20%;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.footer-titulo{
+    font-family:fontFooter;
+    font-size: 38px;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black;
+}
