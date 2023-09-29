@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 @font-face{
@@ -71,7 +72,7 @@ h1{
     margin-left: 30px;
     
 }
-#bt1{
+#bt1-barra-pesquisa{
     background-color: rgb(46, 31, 3);
     color: white;
    
@@ -278,3 +279,16 @@ a{
     color: aliceblue;
     text-shadow: 2px 2px 2px black;
 }
+
+.sugestoes {
+    display: none;
+    position: absolute;
+    top: 135px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    /* Outros estilos, como largura, altura, rolagem, etc. */
+  }
+  .barra-pesquisa {
+    display: list-item;
+  }

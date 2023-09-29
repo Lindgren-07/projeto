@@ -86,3 +86,64 @@ function limpar(){
   carrinho.length = 0
   atualizarCarrinho()
 }
+
+/*let barraPesquisa = document.getElementById("txt-barra-pesquisa").value
+let listaSugestoes = document.getElementById("lista-sugestoes")
+barraPesquisa.addEventListener("keyup",acionar)
+function acionar(){
+  let termoSugestao = barraPesquisa.value.toLowerCase()
+  let listaUl = document.getElementsByClassName("barra-pesquisa")
+  for(let i = 0; i < listaUl.length; i++){
+    if(!listaUl[i].innerHTML.toLowerCase().includes(termoSugestao)){
+      listaUl[i].style.display = "none"
+
+    }
+    else{
+      listaUl[i].style.display = "list-item"
+    }
+  }
+}*/
+
+
+
+let barraPesquisa = document.getElementById("txt-barra-pesquisa");
+let listaSugestoes = document.getElementById("lista-sugestoes");
+
+barraPesquisa.addEventListener("input", acionar);
+
+function acionar() {
+  let termoSugestao = barraPesquisa.value.toLowerCase();
+  let listaUl = document.getElementsByClassName("barra-pesquisa");
+  for (let i = 0; i < listaUl.length; i++) {
+    if (!listaUl[i].innerHTML.toLowerCase().includes(termoSugestao)) {
+      listaUl[i].style.display = "none";
+    } else {
+      listaUl[i].style.display = "list-item";
+    }
+  }
+}
+
+/*let barraPesquisa = document.getElementById("txt-barra-pesquisa");
+let listaSugestoes = document.getElementById("lista-sugestoes");
+
+barraPesquisa.addEventListener("input", acionar);
+
+function acionar() {
+  let termoSugestao = barraPesquisa.value.toLowerCase();
+  let listaUl = document.getElementsByClassName("barra-pesquisa");
+  let sugestoes = listaSugestoes.getElementsByTagName("li");
+
+  for (let i = 0; i < listaUl.length; i++) {
+    if (!listaUl[i].innerHTML.toLowerCase().includes(termoSugestao)) {
+      sugestoes[i].style.display = "none";
+    } else {
+      sugestoes[i].style.display = "list-item";
+    }
+  }
+
+  if (termoSugestao === "") {
+    listaSugestoes.style.display = "none";
+  } else {
+    listaSugestoes.style.display = "block";
+  }
+}*/
